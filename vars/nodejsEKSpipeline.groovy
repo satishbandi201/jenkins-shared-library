@@ -148,7 +148,7 @@ def call(Map configMap){
                     }
                 }
             } */
-        /*     stage('Trigger Deploy') {
+             stage('Trigger Deploy') {
                 when{
                     expression { params.deploy }
                 }
@@ -164,7 +164,7 @@ def call(Map configMap){
                         wait: false // VPC will not wait for SG pipeline completion
                     }
                 }
-            } */
+            }
             
         }
 

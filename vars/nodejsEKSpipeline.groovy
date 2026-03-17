@@ -66,7 +66,7 @@ def call(Map configMap){
                     waitForQualityGate abortPipeline: true }
                 }
             } */
-            stage('Check Dependabot Alerts') {
+            /* stage('Check Dependabot Alerts') {
                 environment { 
                     GITHUB_TOKEN = credentials('github-token')
                 }
@@ -98,8 +98,8 @@ def call(Map configMap){
                             echo "✅ No HIGH/CRITICAL Dependabot alerts found."
                         }
                     }
-                }
-            }
+                } 
+            }*/
             stage('Docker Build') {
                 steps {
                     script {

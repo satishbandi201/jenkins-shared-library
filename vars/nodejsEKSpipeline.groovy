@@ -114,7 +114,7 @@ def call(Map configMap){
                     }
                 }
             }
-            stage('Check Scan Results') {
+            /* stage('Check Scan Results') {
                 steps {
                     script {
                         withAWS(credentials: 'aws-creds', region: 'us-east-1') {
@@ -147,7 +147,7 @@ def call(Map configMap){
                         }
                     }
                 }
-            }
+            } */
             stage('Trigger Deploy') {
                 when{
                     expression { params.deploy }

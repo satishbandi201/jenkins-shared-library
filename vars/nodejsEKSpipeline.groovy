@@ -13,6 +13,7 @@ def call(Map configMap){
         options {
             timeout(time: 30, unit: 'MINUTES') 
             disableConcurrentBuilds()
+            
         }
         parameters {
             booleanParam(name: 'deploy', defaultValue: false, description: 'Toggle this value')
